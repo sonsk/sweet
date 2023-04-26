@@ -1,0 +1,136 @@
+    @font-face{
+            font-family: 'sparkle';
+            src: url('css/sparkle.ttf');
+
+            font-family: 'quicksand';
+            src: url('css/font/quicksand/Quicksand-Light.otf');
+
+            font-family: 'christwish';
+            src: url('css/font/christmas/ChristmasWish.otf');
+
+            font-family: 'miraculous';
+            src: url('css/font/miraculous/Miraculous.ttf');
+        }
+        @font-face
+        {
+            font-family: 'BallparkWeiner';
+            src: url('css/font/ballpark.eot');
+            src: url('css/font/ballpark.eot?#iefix') format('embedded-opentype'),
+                 url('css/font/ballpark.woff') format('woff'),
+                 url('css/font/ballpark.ttf') format('truetype'),
+                 url('css/font/ballpark.svg#BallparkWeiner') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face
+        {
+            font-family: 'Dayrom';
+            src: url('css/font/dayrom.eot');
+            src: url('css/font/dayrom.eot?#iefix') format('embedded-opentype'),
+                 url('css/font/dayrom.woff') format('woff'),
+                 url('css/font/dayrom.ttf') format('truetype'),
+                 url('css/font/dayrom.svg#Dayrom') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        hr{
+            color: black;
+        }
+        .up{
+            background-color: rgb(247 186 219);
+        }
+        .down{
+            background-color: #7f3b1e;
+        }
+        .down,.down a,hr{
+            color: beige;
+            text-decoration: none;
+        }
+      
+        .up p{
+            font-family:'Ballparkweiner', serif;
+            font-size: 40px;
+        }
+        .logo{
+            width: 200px;
+        }
+        /* a{
+            text-decoration: none;
+        } */
+        body h5{
+            font-family:'Dayrom', serif;
+        }
+    
+    .box input[type="text"],.box input[type="password"],.box input[type="tel"],.box input[type="date"],.box input[type="number"],.box input[type="file"],.box input[type="email"],.box select{
+        border: 0;
+        background: none;
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+        border: 2px solid #3498db;
+        padding: 14px 10px;
+        width: 300px;
+        outline: none;
+        border-radius: 24px;
+        transition: 0.25s;
+    }
+    .box input[type="text"]:focus,.box input[type="password"]:focus, .box input[type="tel"]:focus,.box input[type="date"]:focus,.box input[type="number"]:focus,.box input[type="file"]:focus,.box input[type="email"]:focus,.box select:focus{   /*focus permet de changer l'agissement lorsqu'on clic*/
+      width: 280px;  
+      border-color:#EE6A8C;
+    }
+    .box input[type="submit"]{
+        border: 0;
+        background: none;
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+        border: 2px solid #EE6A8C;
+        padding: 14px 40px;
+        outline: none;
+        color: black;
+        border-radius: 24px;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+    .box input[type="submit"]:hover{
+    background: #EE6A8C;
+    }
+    
+    .box a:hover{
+        color: #2ecc71;
+    }
+    /*  [type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+} */
+
+/* IMAGE STYLES */
+[type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + img {
+    outline: 2px solid #EE6A8C;
+  }
+  .fa-star,.fa-star-half{
+    color: #EE6A8C;
+    padding: 3% 0;
+}
+#cart_count{
+    text-align: center;
+    padding: 0 0.9rem 0.1rem 0.9rem;
+    border-radius: 3rem;
+}
+    @media screen and (max-width:700px){
+        .up p{
+            font-size:1.5em;
+        }
+    }
+    @media screen and (max-width:700px){
+        .foot{
+            font-size:0.7em;
+        }
+    }
